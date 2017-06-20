@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.raport_camera.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:layout_alignParentTop="true"
+        android:hapticFeedbackEnabled="false"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/gps_disable"
+        android:layout_marginStart="23dp"
+        android:layout_above="@+id/CheckBoxResponse"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/TextLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="@string/gps_string"
+        android:inputType="textPersonName"
+        android:textAlignment="viewEnd"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/EditTextFeedbackBody"
+        android:layout_alignParentStart="true"></TextView>
+
+    <TextView
+        android:id="@+id/SpinnerFeedbackType"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="סוג אירוע"
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/TextLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="סוג אירוע"
+        android:textAlignment="center"
+        android:textIsSelectable="true"
+        android:layout_alignBaseline="@+id/CheckBoxResponse"
+        android:layout_alignBottom="@+id/CheckBoxResponse"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/EditTextFeedbackBody"
+        android:layout_height="wrap_content"
+        android:hint="@string/feedbackbody"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/TextDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReportName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/feedbackName"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="11dp"
+        android:layout_alignStart="@+id/imageView">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/CheckBoxResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SpinnerFeedbackType"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_toStartOf="@+id/SpinnerFeedbackType"
+        android:enabled="false"
+        android:checked="true"
+        android:text="@string/share_text"></CheckBox>
+
+    <TextView
+        android:id="@+id/TextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:text="תאריך"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/ReportName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/EditTextFeedbackBody" />
+
+</RelativeLayout>

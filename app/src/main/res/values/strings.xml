@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Raport</string>
+    <string name="gps_string">הזן מיקום ידני כאן</string>
+
+    <string name="feedbackbody">תוכן הדיווח</string>
+    <string name="feedbackName">כותרת הדיווח</string>
+    <string name="share_text">שתף לכלל</string>
+
+    <!-- event types -->
+    <string name="feedbacktype1">תשתיות</string>
+    <string name="feedbacktype2">תחבורה</string>
+    <string name="feedbacktype3">סייבר</string>
+    <string name="feedbacktype4">ביטחון</string>
+    <string name="feedbacktype5">צרכנות</string>
+    <string name="feedbacktype6">הסעדה</string>
+    <string name="feedbacktype7">כללי</string>
+    <string-array name="feedbacktypelist">
+        <item>@string/feedbacktype1</item>
+        <item>@string/feedbacktype2</item>
+        <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+        <item>@string/feedbacktype5</item>
+        <item>@string/feedbacktype6</item>
+        <item>@string/feedbacktype7</item>
+    </string-array>
+
+    <string name="feedbacktime1">היום</string>
+    <string name="feedbacktime2">אתמול</string>
+    <string name="feedbacktime3">השבוע</string>
+    <string name="feedbacktime4">החודש</string>
+    <string name="feedbacktime5">השנה</string>
+    <string name="feedbacktime6">אחר</string>
+    <string-array name="feedbacktimelist">
+        <item>@string/feedbacktime1</item>
+        <item>@string/feedbacktime2</item>
+        <item>@string/feedbacktime3</item>
+        <item>@string/feedbacktime4</item>
+        <item>@string/feedbacktime5</item>
+        <item>@string/feedbacktime6</item>
+    </string-array>
+
+    <string name="prompt_email">שם משתמש</string>
+    <string name="prompt_password">סיסמא</string>
+    <string name="action_sign_in">התחבר</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is incorrect</string>
+    <string name="error_empty_password">This password is empty</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_no_user">no in DB</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="link_forgot">שכחת סיסמא? לחץ כאן לחייג 4050</string>
+    <string name="title_activity_print">print</string>
+
+</resources>
